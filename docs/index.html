@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dujar College University portal for grades, tuition, and campus updates." />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    <title>Dujar College University — Portal</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="roles.css" />
+    <link rel="stylesheet" href="branding.css" />
+    <link rel="stylesheet" href="hub.css" />
+    <link rel="stylesheet" href="sections.css" />
+    <link rel="stylesheet" href="index-theme.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <aside class="sidebar" aria-label="Primary navigation">
+      <a class="brand" href="#overview" aria-label="Dujar College University home"><span class="brand-mark">D</span><span class="institution"><strong>Dujar College</strong><small>UNIVERSITY</small></span></a>
+      <div class="institution-rule" aria-hidden="true"><span></span><b>KNOWLEDGE · PURPOSE · FUTURE</b><span></span></div>
+      <p class="school-year">2025—26 SCHOOL YEAR</p>
+      <nav>
+        <a class="nav-link active" href="#overview"><span>⌂</span>Overview</a>
+        <a class="nav-link" href="#grades"><span>▤</span>Grades</a>
+        <a class="nav-link" href="#finance"><span>◫</span>Finance</a>
+        <a class="nav-link" href="#calendar"><span>□</span>Calendar</a>
+        <a class="nav-link" href="#information"><span>ⓘ</span>My information</a>
+        <a class="nav-link" href="#resources"><span>◇</span>Resources</a>
+        <a class="nav-link admin-only" href="#administration"><span>⚙</span>Administration</a>
+      </nav>
+      <div class="sidebar-foot">
+        <div class="secure-note"><span>✓</span><div><strong>Private & protected</strong><br><small>Secure portal session</small></div></div>
+        <a class="sign-out" href="#" id="signOut">↪ Sign out</a>
+      </div>
+    </aside>
+
+    <main id="main">
+      <header class="topbar">
+        <button class="menu-button" id="menuButton" aria-label="Open navigation" aria-expanded="false">☰</button>
+        <div class="crumb">STUDENT PORTAL <span>/</span> OVERVIEW</div>
+        <div class="top-actions"><button class="theme-control" id="mainTheme" type="button">◐</button><a class="signin-link" href="login.html">Sign in</a><button class="icon-button" aria-label="Notifications">♢<i></i></button><button class="profile" id="loginButton" aria-label="Choose account role"><span class="avatar" id="avatar">AM</span><span class="profile-copy"><strong id="profileName">Alex Morgan</strong><small id="profileRole">Student · Grade 10</small></span><b>⌄</b></button></div>
+      </header>
+      <nav class="top-pages" aria-label="Dashboard sections"><a class="active" href="overview.html">Overview</a><a href="grades.html">Grades</a><a href="finance.html">Finance</a><a href="calendar.html">Calendar</a><a href="information.html">Information</a><a href="resources.html">Resources</a></nav>
+
+      <section class="welcome" id="overview">
+        <div><p class="eyebrow">TUESDAY, SEPTEMBER 2</p><h1>Good morning, Alex.</h1><p class="subtle">Here’s a clear picture of your progress and account today.</p></div>
+        <button class="outline-button" id="reportButton">⇩ Download progress report</button>
+      </section>
+      <section class="page-hub" aria-label="Separate portal pages"><a href="student.html"><span class="mini-icon blue">▤</span><b>Student dashboard</b><small>Grades, profile & resources</small></a><a href="teacher.html"><span class="mini-icon coral">⌁</span><b>Teacher workspace</b><small>Assigned classes & grades</small></a><a href="admin.html"><span class="mini-icon yellow">⚙</span><b>Administration</b><small>Users, registrars & courses</small></a><a href="access.html"><span class="mini-icon blue">✓</span><b>CIA security</b><small>Access-sharing controls</small></a></section>
+
+      <section class="summary-grid" aria-label="Student summary">
+        <article class="summary-card grades-card"><div class="card-title"><span class="mini-icon coral">▤</span><span>ACADEMIC PROGRESS</span><button aria-label="More academic options">•••</button></div><div class="grade-line"><strong>3.8</strong><span>Current GPA</span><em>↑ 0.2</em></div><div class="progress-label"><span>On track for honors</span><span>87%</span></div><div class="progress"><i style="width:87%"></i></div><a href="#grades">View all grades <b>→</b></a></article>
+        <article class="summary-card finance-card" id="finance"><div class="card-title"><span class="mini-icon blue">◫</span><span>FINANCIAL OVERVIEW</span><button aria-label="More finance options">•••</button></div><div class="balance"><span>Current balance</span><strong id="balanceAmount">$1,240.00</strong></div><div class="due-row"><span>Next payment due <b>Oct 1, 2025</b></span><span class="due-pill">In 29 days</span></div><button class="primary-button" id="paymentButton">Make a payment <span>→</span></button></article>
+        <article class="summary-card streak-card"><div class="card-title"><span class="mini-icon yellow">☀</span><span>LEARNING STREAK</span></div><div class="streak-number"><strong>12</strong><span>days</span></div><p>You’re building great momentum!</p><div class="days" aria-label="12 day learning streak"><i class="done">M</i><i class="done">T</i><i class="done">W</i><i class="done">T</i><i class="done">F</i><i>S</i><i>S</i></div></article>
+      </section>
+
+      <section class="content-grid">
+        <article class="panel grades-panel" id="grades"><div class="panel-head"><div><p class="eyebrow">THIS TERM</p><h2>Course grades</h2></div><a href="#grades">View gradebook →</a></div>
+          <div class="course-list">
+            <div class="course"><div class="course-symbol purple">∑</div><div class="course-name"><strong>Algebra II</strong><span>Ms. Rivera · Period 2</span></div><div class="course-score"><strong>A−</strong><span>91.4%</span></div><div class="bar"><i style="width:91.4%"></i></div></div>
+            <div class="course"><div class="course-symbol orange">⌁</div><div class="course-name"><strong>World Literature</strong><span>Mr. Adams · Period 3</span></div><div class="course-score"><strong>A</strong><span>95.8%</span></div><div class="bar"><i style="width:95.8%"></i></div></div>
+            <div class="course"><div class="course-symbol teal">⚗</div><div class="course-name"><strong>Biology</strong><span>Dr. Lin · Period 5</span></div><div class="course-score"><strong>B+</strong><span>88.2%</span></div><div class="bar"><i style="width:88.2%"></i></div></div>
+            <div class="course"><div class="course-symbol blue2">◎</div><div class="course-name"><strong>U.S. History</strong><span>Ms. Carter · Period 6</span></div><div class="course-score"><strong>A−</strong><span>90.1%</span></div><div class="bar"><i style="width:90.1%"></i></div></div>
+          </div>
+        </article>
+        <aside class="right-column">
+          <article class="panel agenda" id="calendar"><div class="panel-head"><div><p class="eyebrow">UP NEXT</p><h2>Your agenda</h2></div><a href="#calendar">Full calendar →</a></div><div class="event"><time><b>03</b><span>SEP</span></time><div><strong>Biology lab report</strong><p>Due tomorrow · 11:59 PM</p></div><span class="event-dot coral-dot"></span></div><div class="event"><time><b>05</b><span>SEP</span></time><div><strong>Algebra II quiz</strong><p>Friday · Period 2</p></div><span class="event-dot blue-dot"></span></div><div class="event"><time><b>12</b><span>SEP</span></time><div><strong>Student council meeting</strong><p>3:30 PM · Room 204</p></div><span class="event-dot yellow-dot"></span></div></article>
+          <article class="help-card" id="resources"><span class="help-emoji">✦</span><div><strong>Student resources</strong><p>Library, tutoring, wellbeing, and technology help.</p></div><a href="#resourceLibrary">Browse resources →</a></article>
+        </aside>
+      </section>
+      <section class="detail-grid" id="information">
+        <article class="panel info-panel"><div class="panel-head"><div><p class="eyebrow">STUDENT PROFILE</p><h2>My information</h2></div><a href="#information">Request a change →</a></div><dl><div><dt>Student ID</dt><dd>BP-2025-10482</dd></div><div><dt>Advisor</dt><dd>Ms. Naomi Chen</dd></div><div><dt>Year level</dt><dd>Grade 10 · Sophomore</dd></div><div><dt>Guardian contact</dt><dd>Verified on file</dd></div></dl></article>
+        <article class="panel resource-panel" id="resourceLibrary"><div class="panel-head"><div><p class="eyebrow">LEARNING HUB</p><h2>Resources</h2></div></div><a href="#resources">▣ Digital library <span>Open →</span></a><a href="#resources">◌ Book tutoring <span>Schedule →</span></a><a href="#resources">? Technology help desk <span>Get help →</span></a></article>
+      </section>
+      <section class="panel student-choice" id="teacherDirectory"><div class="panel-head"><div><p class="eyebrow">CLASS SELECTION</p><h2>Choose your teacher</h2></div><span class="role-badge">Student choice</span></div><p>Choose a teacher for an available elective or request a class change. Availability is confirmed by the registrar.</p><div class="choice-row"><label>Available teacher <select id="teacherChoice"><option value="Ms. Rivera — Mathematics">Ms. Rivera — Mathematics</option><option value="Mr. Adams — English">Mr. Adams — English</option><option value="Dr. Lin — Science">Dr. Lin — Science</option><option value="Ms. Carter — History">Ms. Carter — History</option></select></label><button class="primary-button" id="saveTeacherChoice">Save teacher choice <span>→</span></button></div></section>
+      <section class="panel teacher-panel teacher-only" id="teacherWorkspace"><div class="panel-head"><div><p class="eyebrow">MY CLASSES</p><h2>Enrolled students · Biology 10</h2></div><span class="role-badge">Teacher access</span></div><p class="admin-intro">Teachers can only view students enrolled in their assigned classes and submit grades for those students.</p><div class="user-table"><div class="table-head"><span>Student</span><span>Current grade</span><span>Action</span></div><div class="table-row"><span><b>Alex Morgan</b><small>Biology 10 · Period 5</small></span><span>B+ · 88.2%</span><button class="text-button grade-button" data-student="Alex Morgan">Send grade</button></div><div class="table-row"><span><b>Jordan Smith</b><small>Biology 10 · Period 5</small></span><span>A− · 91.0%</span><button class="text-button grade-button" data-student="Jordan Smith">Send grade</button></div></div></section>
+      <section class="admin-panel panel admin-only" id="administration"><div class="panel-head"><div><p class="eyebrow">AUTHORIZED STAFF ONLY</p><h2>Identity & access administration</h2></div><span class="role-badge" id="accessLevel">Administrator</span></div><p class="admin-intro">Create accounts, assign roles, courses, and send secure password-reset links. Actions are recorded in the audit log.</p><div class="admin-actions"><button class="primary-button" id="newUserButton">+ Create new user</button><button class="outline-button" id="createRegistrarButton">+ Create registrar</button><button class="outline-button" id="newCourseButton">+ Add course</button><button class="outline-button" id="resetPasswordButton">↻ Reset user password</button></div><div class="user-table" role="table" aria-label="Recent users"><div class="table-head" role="row"><span>User</span><span>Role</span><span>Status</span></div><div class="table-row" role="row"><span><b>Alex Morgan</b><small>alex.morgan@dujarcollege.example</small></span><span>Student</span><span class="status active-status">Active</span></div><div class="table-row" role="row"><span><b>Naomi Chen</b><small>n.chen@dujarcollege.example</small></span><span>Teacher</span><span class="status active-status">Active</span></div></div></section>
+      <footer><span>© 2025 Dujar College University</span><span>FERPA-aware student portal · <a href="#security">Privacy & security</a></span></footer>
+    </main>
+
+    <dialog id="paymentDialog" aria-labelledby="paymentTitle"><button class="dialog-close" aria-label="Close">×</button><span class="mini-icon blue">◫</span><h2 id="paymentTitle">Secure payment</h2><p>Your payment is handled in a protected checkout. This demo intentionally does not collect card or bank details.</p><label>Payment amount <input id="amount" type="text" value="$1,240.00" inputmode="decimal" autocomplete="off" /></label><button class="primary-button" id="continuePayment">Continue to protected checkout <span>→</span></button><small>🔒 Encrypted connection · Never share passwords or payment details by email.</small></dialog>
+    <dialog id="loginDialog" aria-labelledby="loginTitle"><button class="dialog-close" data-close="loginDialog" aria-label="Close">×</button><span class="mini-icon blue">⌁</span><h2 id="loginTitle">Portal sign in</h2><p>Choose a demo account to see the appropriate workspace and access controls.</p><label>Email address <input id="loginEmail" type="email" value="alex.morgan@dujarcollege.example" autocomplete="email" /></label><label>Sign in as <select id="roleSelect"><option value="student">Student</option><option value="teacher">Teacher</option><option value="registrar">Registrar</option><option value="admin">Administrator</option><option value="superadmin">Super administrator</option></select></label><button class="primary-button" id="loginSubmit">Sign in securely <span>→</span></button><small>Demo only · Production sign-in should use SSO, MFA, and server-side sessions.</small></dialog>
+    <dialog id="userDialog" aria-labelledby="userTitle"><button class="dialog-close" data-close="userDialog" aria-label="Close">×</button><span class="mini-icon coral">+</span><h2 id="userTitle">Create new user</h2><p>Only authorized administrators can create accounts.</p><label>Full name <input id="newUserName" type="text" maxlength="80" autocomplete="name" /></label><label>School email <input id="newUserEmail" type="email" maxlength="120" autocomplete="email" /></label><label>Role <select id="newUserRole"><option>Student</option><option>Teacher</option><option>Registrar</option><option>Administrator</option></select></label><button class="primary-button" id="createUser">Create account & send invitation <span>→</span></button><small>Demo action only. A real system sends a time-limited activation link—never a password.</small></dialog>
+    <dialog id="resetDialog" aria-labelledby="resetTitle"><button class="dialog-close" data-close="resetDialog" aria-label="Close">×</button><span class="mini-icon yellow">↻</span><h2 id="resetTitle">Reset password</h2><p>Send a single-use, time-limited reset link. Never disclose or set a password manually.</p><label>User email <input id="resetEmail" type="email" placeholder="name@dujarcollege.example" maxlength="120" autocomplete="email" /></label><button class="primary-button" id="sendReset">Send secure reset link <span>→</span></button><small>Demo only · Requests should be rate-limited and recorded in an audit trail.</small></dialog>
+    <dialog id="courseDialog" aria-labelledby="courseTitle"><button class="dialog-close" aria-label="Close">×</button><span class="mini-icon blue">+</span><h2 id="courseTitle">Add a course</h2><p>Create a course and assign an approved teacher. Enrollment remains subject to capacity and registrar approval.</p><label>Course name <input id="courseName" type="text" maxlength="80" placeholder="e.g. Digital Media" /></label><label>Course code <input id="courseCode" type="text" maxlength="16" placeholder="e.g. ART-210" /></label><label>Assigned teacher <select id="courseTeacher"><option>Ms. Rivera</option><option>Mr. Adams</option><option>Dr. Lin</option><option>Ms. Carter</option></select></label><button class="primary-button" id="createCourse">Create course <span>→</span></button><small>Demo only · Production changes must require authorization and audit logging.</small></dialog>
+    <dialog id="gradeDialog" aria-labelledby="gradeTitle"><button class="dialog-close" aria-label="Close">×</button><span class="mini-icon coral">▤</span><h2 id="gradeTitle">Send grade</h2><p id="gradeStudent">Submit a grade for an enrolled student.</p><label>Grade <select id="gradeValue"><option>A</option><option>A−</option><option>B+</option><option>B</option><option>B−</option><option>C+</option></select></label><label>Private feedback <input id="gradeFeedback" type="text" maxlength="250" placeholder="Optional note for the student" /></label><button class="primary-button" id="submitGrade">Submit grade <span>→</span></button><small>Demo only · Production submissions should be timestamped and retained in an audit log.</small></dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
